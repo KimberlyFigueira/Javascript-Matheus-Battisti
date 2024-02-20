@@ -17,3 +17,17 @@ console.log(title)
 let body = document.querySelector("body")
 //trocar os elementos: elemento que vai entrar, elemento que vai sair
 body.replaceChild(elemento, title)
+
+////////////////////////////////////////
+let elemento2 = document.createElement("h1")
+elemento2.classList = "Classe-elemento"
+
+var texto = document.createTextNode("Texto do h1")
+elemento2.appendChild(texto)
+console.log(elemento2)
+
+let paragraph = document.querySelector("#paragrafo")
+console.log(paragraph)
+
+let elPai = paragraph.parentNode
+elPai.replaceChild(elemento2, paragraph)
